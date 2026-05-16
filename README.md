@@ -25,6 +25,20 @@ VITE_RENT_ESCROW_CONTRACT_ID=
 VITE_STELLAR_MAINNET_RPC_URL=
 ```
 
+## Vercel Deployment
+
+This repo is configured as a single-page app for Vercel. Vercel should build the project with `npm run build` and serve `dist/`.
+
+For deep links to work on refresh, the repository includes a `vercel.json` rewrite that routes all paths to `index.html`.
+
+Suggested environment variables on Vercel:
+
+```text
+VITE_STELLAR_NETWORK=testnet
+VITE_RENT_ESCROW_CONTRACT_ID=
+VITE_STELLAR_MAINNET_RPC_URL=
+```
+
 ## Contributor Tasks
 
 - Generate TypeScript bindings from deployed WASM.
